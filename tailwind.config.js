@@ -1,0 +1,112 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        gray: {
+          "100": "#020922",
+          "200": "rgba(255, 255, 255, 0.2)",
+          "300": "rgba(255, 255, 255, 0.8)",
+          "400": "#1c1d21",
+          "500": "#000f2d",
+          "700": "rgba(255, 255, 255, 0.7)",
+          "800": "rgba(255, 255, 255, 0.4)",
+          "900": "rgba(255, 255, 255, 0.5)",
+        },
+        "background-default": "#fff",
+        navy: "rgba(30, 35, 153, 0.45)",
+        snow: {
+          "100": "#fffbfb",
+          "200": "#fffafa",
+          "300": "#fbfafa",
+        },
+        lightgreen: "rgba(85, 213, 121, 0.78)",
+        darkslateblue: "rgba(20, 65, 153, 0.15)",
+        "border-primary": "#1a191e",
+        "text-primary": "#5bb5a2",
+        "background-muted": "#f8f8f8",
+        whitesmoke: {
+          "100": "#eee",
+          "200": "#e8f2ee",
+        },
+        mediumslateblue: "#925fe2",
+        "cold-grey-50": "#7b7e86",
+        darkgray: "#9a9ea5",
+      },
+      spacing: {},
+      fontFamily: {
+        "text-small": "Inter",
+        inherit: "inherit",
+        "dm-sans": "'DM Sans'",
+        poppins: "Poppins",
+        roboto: "Roboto",
+      },
+      borderRadius: {
+        "xs-7": "11.7px",
+        "10xl-3": "29.3px",
+        "7xs-9": "5.9px",
+        "9xs-5": "3.5px",
+        "39xl-5": "58.5px",
+        "7xs-4": "5.4px",
+      },
+    },
+    fontSize: {
+      "19xl": "38px",
+      "13xl-1": "32.1px",
+      "xl-6": "20.6px",
+      base: "16px",
+      "10xl-6": "29.6px",
+      "5xl": "24px",
+      "6xl": "25px",
+      lgi: "19px",
+      "12xl-6": "31.6px",
+      "12xl-7": "31.7px",
+      "21xl-7": "40.7px",
+      "14xl": "33px",
+      "3xl": "22px",
+      "lg-3": "18.3px",
+      "8xl-3": "27.3px",
+      "9xl": "28px",
+      "6xs": "7px",
+      "3xs-4": "9.4px",
+      lg: "18px",
+      sm: "14px",
+      "6xs-5": "6.5px",
+      "8xs-4": "4.4px",
+      "xs-6": "11.6px",
+      "2xs-5": "10.5px",
+      "18xl-5": "37.5px",
+      "11xl": "30px",
+      "29xl": "48px",
+      "10xl": "29px",
+      inherit: "inherit",
+    },
+    screens: {
+      mq1350: {
+        raw: "screen and (max-width: 1350px)",
+      },
+      lg: {
+        max: "1200px",
+      },
+      mq1050: {
+        raw: "screen and (max-width: 1050px)",
+      },
+      mq800: {
+        raw: "screen and (max-width: 800px)",
+      },
+      mq767: {
+        raw: "screen and (max-width: 767px)",
+      },
+      mq750: {
+        raw: "screen and (max-width: 750px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
